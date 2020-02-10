@@ -1,12 +1,26 @@
-nav ul {
-  margin: 0;
-  padding: 6px;
-  list-style: none; }
+* {
+  box-sizing: border-box; }
 
-nav li {
-  display: inline-block; }
-
-nav a {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none; }
+html body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  html body .navigation {
+    position: fixed;
+    left: 10vw;
+    bottom: 10vw; }
+    html body .navigation nav ul {
+      margin: 0;
+      padding: 6px;
+      list-style: none; }
+    html body .navigation nav li {
+      display: block; }
+    html body .navigation nav a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none; }
+  html body main section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }

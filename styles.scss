@@ -1,17 +1,58 @@
 $padding: 6px;
 
-nav {
-  ul {
-    margin: 0;
-    padding: $padding;
-    list-style: none;
+* {
+  box-sizing: border-box;
+}
+
+html {
+
+
+  body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .navigation {
+
+      position: fixed;
+      left: 10vw;
+      bottom: 10vw;
+
+      nav {
+        ul {
+          margin: 0;
+          padding: $padding;
+          list-style: none;
+        }
+  
+        li {
+          display: block;
+        }
+  
+        a {
+          display: block;
+          padding: $padding 12px;
+          text-decoration: none;
+        }
+      }
+    }
+
+
+    
+    main {
+      
+      section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+      }
+
+    }
+
   }
 
-  li { display: inline-block; }
-
-  a {
-    display: block;
-    padding: $padding 12px;
-    text-decoration: none;
-  }
 }
