@@ -13,6 +13,13 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "type": "gulp",
+            "task": "sass",
+            "problemMatcher": [
+                "$node-sass"
+            ]
         }
     ],
 }

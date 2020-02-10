@@ -1,11 +1,29 @@
 $padding: 6px;
+$background: #000;
+$text: #00A844;
 
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
 
+  scroll-behavior: smooth;
+
+  background-color: $background;
+  color: $text;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  a {
+    font-family: 'Inconsolata', monospace;
+  }
 
   body {
 
@@ -25,28 +43,64 @@ html {
           padding: $padding;
           list-style: none;
         }
-  
+
         li {
           display: block;
         }
-  
+
         a {
           display: block;
-          padding: $padding 12px;
           text-decoration: none;
+          font-size: 1.25rem;
+
+          &:visited {
+            color: $text;
+          }
+
+          &:hover,
+          &:active {
+            color: #fff;
+          }
         }
       }
     }
 
 
-    
+
     main {
-      
+
+      #intro {
+
+        h2,
+        h3,
+        .profileImage {
+          text-align: center;
+          line-height: .5;
+        }
+
+        h2 {
+          font-size: 2.5rem;
+          letter-spacing: .75rem;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          letter-spacing: .25rem;
+        }
+
+
+
+      }
+
       section {
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .sectionContent {
+          padding: 0 25vw;
+        }
 
 
       }
@@ -54,5 +108,4 @@ html {
     }
 
   }
-
 }

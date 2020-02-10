@@ -1,26 +1,57 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
 
-html body {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  html body .navigation {
-    position: fixed;
-    left: 10vw;
-    bottom: 10vw; }
-    html body .navigation nav ul {
-      margin: 0;
-      padding: 6px;
-      list-style: none; }
-    html body .navigation nav li {
-      display: block; }
-    html body .navigation nav a {
-      display: block;
-      padding: 6px 12px;
-      text-decoration: none; }
-  html body main section {
-    height: 100vh;
+html {
+  scroll-behavior: smooth;
+  background-color: #000;
+  color: #00A844; }
+  html h1,
+  html h2,
+  html h3,
+  html h4,
+  html h5,
+  html h6,
+  html li,
+  html a {
+    font-family: 'Inconsolata', monospace; }
+  html body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center; }
+    html body .navigation {
+      position: fixed;
+      left: 10vw;
+      bottom: 10vw; }
+      html body .navigation nav ul {
+        margin: 0;
+        padding: 6px;
+        list-style: none; }
+      html body .navigation nav li {
+        display: block; }
+      html body .navigation nav a {
+        display: block;
+        text-decoration: none;
+        font-size: 1.25rem; }
+        html body .navigation nav a:visited {
+          color: #00A844; }
+        html body .navigation nav a:hover, html body .navigation nav a:active {
+          color: #fff; }
+    html body main #intro h2,
+    html body main #intro h3,
+    html body main #intro .profileImage {
+      text-align: center;
+      line-height: .5; }
+    html body main #intro h2 {
+      font-size: 2.5rem;
+      letter-spacing: .75rem; }
+    html body main #intro h3 {
+      font-size: 1.5rem;
+      letter-spacing: .25rem; }
+    html body main section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      html body main section .sectionContent {
+        padding: 0 25vw; }
