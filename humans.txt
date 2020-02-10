@@ -1,0 +1,10 @@
+# humanstxt.org/
+
+# AUTHOR
+
+    Dave Irwin -- Software Developer -- @redirwin
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Modernizr, Normalize.css
