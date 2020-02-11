@@ -23,6 +23,16 @@ html {
   li,
   a {
     font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;    
+  }
+
+  a {
+    color: $text;
+    text-decoration: none;
+    &:hover,
+    &:active {
+      color: #fff;
+    }
   }
 
   body {
@@ -50,24 +60,19 @@ html {
 
         a {
           display: block;
-          text-decoration: none;
           font-size: 1.25rem;
 
-          &:visited {
-            color: $text;
-          }
-
-          &:hover,
-          &:active {
-            color: #fff;
-          }
         }
       }
     }
 
-
-
     main {
+
+      .sectionContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
       #intro {
 
@@ -80,7 +85,7 @@ html {
 
         h2 {
           font-size: 2.5rem;
-          letter-spacing: .75rem;
+          letter-spacing: .5rem;
         }
 
         h3 {
@@ -88,6 +93,24 @@ html {
           letter-spacing: .25rem;
         }
 
+        .profileImage {
+          width: 200px;
+          margin-top: 1rem;
+
+          img {
+            max-width: 100%;
+            border-radius: 50%;
+          }
+
+        }
+
+        .socialProfiles {
+          display: flex;
+          justify-content: space-around;
+          width: 75px;
+          margin-top: 1.5rem;
+          font-size: 1.5rem;
+        }
 
 
       }
