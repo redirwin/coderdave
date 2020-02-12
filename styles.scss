@@ -23,12 +23,13 @@ html {
   li,
   a {
     font-family: 'Inconsolata', monospace;
-    text-transform: uppercase;    
+    text-transform: uppercase;
   }
 
   a {
     color: $text;
     text-decoration: none;
+
     &:hover,
     &:active {
       color: #fff;
@@ -96,10 +97,16 @@ html {
         .profileImage {
           width: 150px;
           margin-top: 1rem;
+          background-color: $text;
+          border-radius: 50%;
 
           img {
             max-width: 100%;
             border-radius: 50%;
+            &:hover {
+              opacity: 1;
+              opacity: .85;
+            }
           }
 
         }

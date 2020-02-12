@@ -55,10 +55,15 @@ html {
       letter-spacing: .25rem; }
     html body main #intro .profileImage {
       width: 150px;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      background-color: #00A844;
+      border-radius: 50%; }
       html body main #intro .profileImage img {
         max-width: 100%;
         border-radius: 50%; }
+        html body main #intro .profileImage img:hover {
+          opacity: 1;
+          opacity: .85; }
     html body main #intro .socialProfiles {
       display: flex;
       justify-content: space-around;
