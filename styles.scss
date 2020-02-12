@@ -1,10 +1,14 @@
 $padding: 6px;
 $background: #000;
 $text: #00A844;
+$primaryFont: 'Montserrat',
+sans-serif;
+$secondaryFont: 'Inconsolata',
+monospace;
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $secondaryFont;
 }
 
 html {
@@ -22,7 +26,7 @@ html {
   h6,
   li,
   a {
-    font-family: 'Inconsolata', monospace;
+    font-family: $secondaryFont;
     text-transform: uppercase;
   }
 
@@ -34,21 +38,29 @@ html {
     &:active {
       color: #fff;
     }
+
+    p {
+      font-size: 1.5rem;
+    }
   }
 
   body {
-
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    overflow: hidden;
 
     .navigation {
 
       position: fixed;
-      left: 10vw;
-      bottom: 10vw;
+      height: 100vh;
+      width: 15vw;
+      background-color: #000;
 
       nav {
+
+        position: fixed;
+        bottom: 10vw;
+        left: 10vw;
+
         ul {
           margin: 0;
           padding: $padding;
@@ -62,12 +74,12 @@ html {
         a {
           display: block;
           font-size: 1.25rem;
-
         }
       }
     }
 
     main {
+      display: flex;
 
       .sectionContent {
         display: flex;
@@ -77,11 +89,19 @@ html {
 
       #intro {
 
+        display: flex;
+        justify-content: center;
+
+        .sectionContent {
+          border: none;
+          padding-left: none;
+        }
+
         h2,
         h3,
         .profileImage {
           text-align: center;
-          line-height: .5;
+          line-height: .5;          
         }
 
         h2 {
@@ -99,10 +119,12 @@ html {
           margin-top: 1rem;
           background-color: $text;
           border-radius: 50%;
+          border: 1px solid $text;
 
           img {
             max-width: 100%;
             border-radius: 50%;
+
             &:hover {
               opacity: 1;
               opacity: .85;
@@ -119,17 +141,45 @@ html {
           font-size: 1.5rem;
         }
 
-
       }
 
       section {
         height: 100vh;
+        width: 100vw;
         display: flex;
-        justify-content: center;
         align-items: center;
 
+        h3 {
+          width: 100%;
+          text-align: left;
+        }
+
+        p {
+          width: 100%;
+        }
+
         .sectionContent {
-          padding: 0 25vw;
+          margin: 0 25vw;
+          border-left: 2px solid $text;
+          padding-left: 25px;
+
+        }
+
+        .skillBlurb {
+          .fab {
+            font-size: 3rem;
+          }
+          &:hover {
+            color: #fff;
+          }
+        }
+
+        .sectionNav {
+          margin-top: 30px;
+          width: 100%;
+          margin: auto;
+          display: flex;
+          justify-content: space-between;
         }
 
 

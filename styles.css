@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Inconsolata", monospace; }
 
 html {
   scroll-behavior: smooth;
@@ -14,66 +14,98 @@ html {
   html h6,
   html li,
   html a {
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
     text-transform: uppercase; }
   html a {
     color: #00A844;
     text-decoration: none; }
     html a:hover, html a:active {
       color: #fff; }
+    html a p {
+      font-size: 1.5rem; }
   html body {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
+    overflow: hidden; }
     html body .navigation {
       position: fixed;
-      left: 10vw;
-      bottom: 10vw; }
-      html body .navigation nav ul {
-        margin: 0;
-        padding: 6px;
-        list-style: none; }
-      html body .navigation nav li {
-        display: block; }
-      html body .navigation nav a {
-        display: block;
-        font-size: 1.25rem; }
-    html body main .sectionContent {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-    html body main #intro h2,
-    html body main #intro h3,
-    html body main #intro .profileImage {
-      text-align: center;
-      line-height: .5; }
-    html body main #intro h2 {
-      font-size: 2.5rem;
-      letter-spacing: .5rem; }
-    html body main #intro h3 {
-      font-size: 1.5rem;
-      letter-spacing: .25rem; }
-    html body main #intro .profileImage {
-      width: 150px;
-      margin-top: 1rem;
-      background-color: #00A844;
-      border-radius: 50%; }
-      html body main #intro .profileImage img {
-        max-width: 100%;
-        border-radius: 50%; }
-        html body main #intro .profileImage img:hover {
-          opacity: 1;
-          opacity: .85; }
-    html body main #intro .socialProfiles {
-      display: flex;
-      justify-content: space-around;
-      width: 75px;
-      margin-top: 1.5rem;
-      font-size: 1.5rem; }
-    html body main section {
       height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      html body main section .sectionContent {
-        padding: 0 25vw; }
+      width: 15vw;
+      background-color: #000; }
+      html body .navigation nav {
+        position: fixed;
+        bottom: 10vw;
+        left: 10vw; }
+        html body .navigation nav ul {
+          margin: 0;
+          padding: 6px;
+          list-style: none; }
+        html body .navigation nav li {
+          display: block; }
+        html body .navigation nav a {
+          display: block;
+          font-size: 1.25rem; }
+    html body main {
+      display: flex; }
+      html body main .sectionContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      html body main #intro {
+        display: flex;
+        justify-content: center; }
+        html body main #intro .sectionContent {
+          border: none;
+          padding-left: none; }
+        html body main #intro h2,
+        html body main #intro h3,
+        html body main #intro .profileImage {
+          text-align: center;
+          line-height: .5; }
+        html body main #intro h2 {
+          font-size: 2.5rem;
+          letter-spacing: .5rem; }
+        html body main #intro h3 {
+          font-size: 1.5rem;
+          letter-spacing: .25rem; }
+        html body main #intro .profileImage {
+          width: 150px;
+          margin-top: 1rem;
+          background-color: #00A844;
+          border-radius: 50%;
+          border: 1px solid #00A844; }
+          html body main #intro .profileImage img {
+            max-width: 100%;
+            border-radius: 50%; }
+            html body main #intro .profileImage img:hover {
+              opacity: 1;
+              opacity: .85; }
+        html body main #intro .socialProfiles {
+          display: flex;
+          justify-content: space-around;
+          width: 75px;
+          margin-top: 1.5rem;
+          font-size: 1.5rem; }
+      html body main section {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center; }
+        html body main section h3 {
+          width: 100%;
+          text-align: left; }
+        html body main section p {
+          width: 100%; }
+        html body main section .sectionContent {
+          margin: 0 25vw;
+          border-left: 2px solid #00A844;
+          padding-left: 25px; }
+        html body main section .skillBlurb .fab {
+          font-size: 3rem; }
+        html body main section .skillBlurb:hover {
+          color: #fff; }
+        html body main section .sectionNav {
+          margin-top: 30px;
+          width: 100%;
+          margin: auto;
+          display: flex;
+          justify-content: space-between; }
