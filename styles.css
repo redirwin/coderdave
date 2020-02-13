@@ -29,7 +29,7 @@ html {
     html body .navigation {
       position: fixed;
       height: 100vh;
-      width: 15vw;
+      width: 20vw;
       background-color: #000; }
       html body .navigation nav {
         position: fixed;
@@ -99,6 +99,9 @@ html {
           margin: 0 25vw;
           border-left: 2px solid #00A844;
           padding-left: 25px; }
+        html body main section#skills {
+          display: flex;
+          justify-content: center; }
         html body main section .skillSection {
           width: 100%; }
           html body main section .skillSection h4 {
