@@ -25,7 +25,7 @@ html {
       font-size: 1.5rem; }
   html body {
     display: flex;
-    overflow: hidden; }
+    overflow-x: hidden; }
     html body .navigation {
       position: fixed;
       height: 100vh;
@@ -99,13 +99,24 @@ html {
           margin: 0 25vw;
           border-left: 2px solid #00A844;
           padding-left: 25px; }
-        html body main section .skillBlurb .fab {
-          font-size: 3rem; }
-        html body main section .skillBlurb:hover {
-          color: #fff; }
-        html body main section .sectionNav {
-          margin-top: 30px;
-          width: 100%;
-          margin: auto;
+        html body main section .skillSection {
+          width: 100%; }
+          html body main section .skillSection h4 {
+            margin-bottom: 0;
+            border-bottom: 1px solid #00A844; }
+        html body main section .skillsContainer {
           display: flex;
-          justify-content: space-between; }
+          flex-wrap: wrap; }
+        html body main section .skillBlurb {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 2rem; }
+          html body main section .skillBlurb h4 {
+            line-height: 0;
+            border-bottom: none;
+            text-transform: none; }
+          html body main section .skillBlurb .fab, html body main section .skillBlurb .fas {
+            font-size: 2rem; }
+          html body main section .skillBlurb:hover {
+            color: #fff; }

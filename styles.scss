@@ -46,7 +46,7 @@ html {
 
   body {
     display: flex;
-    overflow: hidden;
+    overflow-x: hidden;
 
     .navigation {
 
@@ -101,7 +101,7 @@ html {
         h3,
         .profileImage {
           text-align: center;
-          line-height: .5;          
+          line-height: .5;
         }
 
         h2 {
@@ -165,22 +165,43 @@ html {
 
         }
 
-        .skillBlurb {
-          .fab {
-            font-size: 3rem;
+        .skillSection {
+          width: 100%;
+
+          h4 {
+            // width: 15%;
+            margin-bottom: 0;
+            border-bottom: 1px solid $text;
           }
+        }
+
+        .skillsContainer {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .skillBlurb {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 2rem;
+
+          h4 {
+            line-height: 0;
+            border-bottom: none;
+            text-transform: none;
+          }
+
+          .fab, .fas {
+            font-size: 2rem;
+          }
+
+
           &:hover {
             color: #fff;
           }
         }
 
-        .sectionNav {
-          margin-top: 30px;
-          width: 100%;
-          margin: auto;
-          display: flex;
-          justify-content: space-between;
-        }
 
 
       }
